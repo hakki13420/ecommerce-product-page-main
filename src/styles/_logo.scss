@@ -1,0 +1,10 @@
+.logo{
+    flex: 1;
+    
+
+    @media screen and (max-width:768px) {
+        img{
+            width: clamp(10vw,20vw,5rem);
+        }
+    }
+}

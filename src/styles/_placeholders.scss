@@ -1,0 +1,19 @@
+%iconProductPreview {
+    position: absolute;
+    cursor: pointer;
+}
+%svgHover{
+    top: 34%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+    @include dflex(row, center,center, unset);
+    svg {        
+    &:hover{
+        path{
+            stroke: $orange;
+        }
+    }
+}
+}

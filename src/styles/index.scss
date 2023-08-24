@@ -1,0 +1,35 @@
+@import './variables';
+@import './mixins';
+@import './placeholders';
+@import './logo';
+@import './nav';
+@import './avatar';
+@import './navBar';
+@import './cartIcon';
+@import './cart';
+@import './navBarRight';
+@import './productGallery';
+@import './productGalleryMobile';
+@import './productDetails';
+@import './productPreview';
+@import './product';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $white;
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}

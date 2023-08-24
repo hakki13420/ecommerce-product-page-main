@@ -1,0 +1,48 @@
+.product-gallery-mobile{
+    width: 100%;
+    position: relative;
+    .product-image{
+        padding: 0;
+        img{
+            border-radius: 0;
+            height: 300px;
+        }
+    }           
+    .next-container{
+        position: absolute;
+        top:50%;
+        left: calc(100% - 1.5rem);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        @include dflex(row, center, center, unset);
+        svg {        
+            &:hover{
+                path{
+                    stroke: $orange;
+                }
+            }
+        }
+    }
+    .previous-container{
+        position: absolute;
+        top:50%;
+        left: 1.5rem;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        @include dflex(row, center, center, unset);
+
+        svg {        
+            &:hover{
+                path{
+                    stroke: $orange;
+                }
+            }
+        }
+    }
+}

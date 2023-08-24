@@ -1,0 +1,50 @@
+.product-preview{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    @include dflex(row, center, center, unset);
+    .product-preview-container{
+        position: relative;
+        padding: 1rem;
+        .product-gallery{
+            width: 100%;
+            .product-image{
+                width :450px;
+                height: 370px;
+                img{
+                    height: 100%;
+                }
+            }
+            .product-gallery{
+                width: 400px;
+            }
+        }
+        .close-container{
+            @extend %iconProductPreview;
+            top: -1rem;
+            right: 1rem;
+            svg {
+                path{
+                    fill:white;
+                }        
+                &:hover{
+                    path{
+                        fill: $orange;
+                    }
+                }
+            }
+        }
+        .previous-container{
+            @extend %iconProductPreview;
+            @extend %svgHover;
+            left: 0;
+        }
+        .next-container{
+            @extend %iconProductPreview;
+            @extend %svgHover;
+            right: 0;
+        }
+}
+}

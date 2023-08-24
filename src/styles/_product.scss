@@ -1,0 +1,22 @@
+.product{
+    @include dflex(row, center, center, 2rem);
+    padding: 2rem 5rem;  
+    position: relative;  
+    .product-gallery-mobile{
+        display: none;
+    }
+   
+
+
+   @media screen and (max-width:576px) {
+        padding: 0;  
+        @include dflex(column, center, center, 2rem);
+        height: auto;   
+        .product-gallery-mobile{
+            display: block;
+        }
+        .product-gallery{
+            display: none;
+        }
+   } 
+}
