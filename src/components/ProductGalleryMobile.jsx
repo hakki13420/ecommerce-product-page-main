@@ -1,6 +1,6 @@
 import { ReactComponent as Close } from '../assets/images/icon-close.svg'
 import { ReactComponent as Next } from '../assets/images/icon-next.svg'
-import { ReactComponent as Previous } from '../assets/images/icon-Previous.svg'
+import { ReactComponent as Previous } from '../assets/images/icon-previous.svg'
 import { useDispatch, useSelector } from 'react-redux'
 import { closePreview, nextImage, previousImage } from '../slices/productsSlice'
 import Icon from './Icon'
